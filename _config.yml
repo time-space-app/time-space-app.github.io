@@ -28,5 +28,5 @@ linkedin_username: ilguk-kim-5305ab163
 # pagination
 plugins:
   - jekyll-paginate
-paginate: 2                  # 페이징 처리 개수
+paginate: 4                  # 페이징 처리 개수
 paginate_path: "/page:num/"   # URL 규칙
