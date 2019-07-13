@@ -3,7 +3,7 @@ title: "TimeSpace-v1.5"
 layout: post
 summary: 타임스페이스프레임웍 플러그인 준비
 categories: timespace
-thumbnail: work/hello.jpg
+thumbnail: posts/hello.jpg
 author: TimeSpace
 ---
 
