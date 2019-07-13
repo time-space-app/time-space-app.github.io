@@ -1,13 +1,13 @@
 ---
 title: "기술문서 블로그 생성"
 layout: post
-summary: 타임스페이스 DOCs
+summary: Time-Space-App
 categories: timespace
 thumbnail: posts/gitflow-workflow.png
 author: 김일국
 ---
 
-# 기술문서 블로그 타임스페이스 DOCs 생성
+# 기술문서 블로그 타임스페이스 Time-Space-App 생성
 
 작업결과확인: <a href="https://time-space-app.github.io/" target="_blank">[https://time-space-app.github.io/]</a>
 
