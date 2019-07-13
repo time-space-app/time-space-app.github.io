@@ -4,7 +4,7 @@ layout: post
 summary: 타임스페이스에 사용될 fullpage플러그인
 categories: fullpage
 thumbnail: posts/hello.jpg
-author: 김일국
+author: TimeSpace
 ---
 
 # 부트스트랩4.0기반 fullPage플러그인

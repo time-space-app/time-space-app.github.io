@@ -42,7 +42,7 @@ character-set-server = utf8
 ---
 title: "부트스트랩4.0기반 fullPage플러그인 사용"
 layout: post
-author: 김일국
+author: TimeSpace
 summary: 타임스페이스에 사용될 fullpage플러그인
 thumbnail: posts/hello.jpg
 categories: fullPage

@@ -4,7 +4,7 @@ layout: post
 summary: 타임스페이스프레임웍 개발환경 준비
 categories: timespace
 thumbnail: posts/useful-tools.jpg
-author: 김일국
+author: TimeSpace
 ---
 
 # 2019.07.05 작업시작

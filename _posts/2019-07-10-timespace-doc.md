@@ -4,7 +4,7 @@ layout: post
 summary: 타임스페이스프레임웍 플러그인 준비
 categories: codemirror
 thumbnail: work/codemirror_realtime.jpg
-author: 김일국
+author: TimeSpace
 ---
 
 # 2019.07.12 코드미러플러그인 적용준비
