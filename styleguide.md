@@ -28,7 +28,7 @@ title: Styleguide
 <div class="row no-gutters">
   <div class="col-md-5 col-centered">
     <div id="editor" style="display: none;">
-        <textarea  id="reditor" class="reditor" rows="4" cols="50" name="body" value=""> </textarea>
+        <textarea  id="reditor" class="reditor" rows="4" cols="50" name="text_area" value=""></textarea>
     </div>
   </div>
   <div class="col-md-7 col-centered">
