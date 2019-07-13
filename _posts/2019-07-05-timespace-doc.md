@@ -4,7 +4,7 @@ layout: post
 summary: Time-Space-App
 categories: timespace
 thumbnail: posts/gitflow-workflow.png
-author: 김일국
+author: TimeSpace
 ---
 
 # 기술문서 블로그 타임스페이스 Time-Space-App 생성
