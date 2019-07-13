@@ -1,0 +1,105 @@
+--- 
+layout: default 
+---
+
+
+    <div class="row">
+
+    <div class="col-lg-8">
+
+        <div class="card">
+            <h1 class="card-title">About Me</h1>
+
+            <p> {{ site.author_bio }} </p>
+        </div>
+
+        <div class="card">
+            <h1 class="card-title"> Work Experience</h1>
+
+            <br />
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/assets/img/work/logo.png" class="company-logo" />
+                </div>
+                <div class="col-md-6">
+                    <h4 class="experience-title"> 타임스페이스 CEO</h4>
+                    <h6 class="experience-info">Time-Space ( Oct 2013 - 현재 )</h6>
+                    <p class="experience-desc"> 다국어 홈페이지, GnuBoard + Wordpress 사이트, app제작 </p>
+
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/assets/img/work/code.jpg" class="company-logo" />
+                </div>
+                <div class="col-md-6">
+                    <h4 class="experience-title"> 유료 Coding + Fruntend UI</h4>
+                    <h6 class="experience-info">2004 - 현재</h6>
+                    <p class="experience-desc"> HTML5와 jQuery를 이용한 UI 및 스프링프레임웍(JAVA) 작업 </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+            <h1 class="card-title"> Latest Projects</h1>
+
+            <br />
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/assets/img/projects/fullpage.png" class="project-img" />
+                </div>
+                <div class="col-md-5">
+                    <h4 class="project-title"> Time-space v1.5작업준비 </h4>
+                    <p class="project-desc"> 타임스페이스 v1.5 버전 업데이트 준비 built using Bootstrap4+fullPage UI.</p>
+                    <a class="project-link" href="https://time-space-app.github.io/fullpage/fullpage.html">https://time-space-app.github.io/fullpage/fullpage.html</a>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/assets/img/projects/time-space.jpg" class="project-img" />
+                </div>
+                <div class="col-md-5">
+                    <h4 class="project-title"> Time-space v1.4 업데이트 완료 </h4>
+                    <p class="project-desc">  타임스페이스 v1.4버전 업데이트 built using Bootstrap2+Metro UI2, PHP7, Mysql+MariaDB.</p>
+                    <a class="project-link" href="http://blog.daum.net/web_design">Daum 기술블로그</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-4">
+
+        <div class="card">
+
+            <h6>
+                <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}</h6>
+            <h6>
+                <i class="fas fa-envelope"></i> {{ site.author_email }}</h6>
+            <h6>
+                <i class="fas fa-link"></i> {{ site.author_website_url }} </h6>
+
+        </div>
+
+        <div class="card">
+            <h1> Skills </h1>
+            <p> HTML , CSS , Javascript , PHP, JAVA, C#</p>
+            <p> WEB Design, Mysql, Git, Linux </p>
+        </div>
+        <!--
+        <div class="card">
+            <h1> Coding Activity </h1>
+            {% comment %}
+            {%- include activity.html -%}
+            {% endcomment %}
+        </div>
+        -->
+    </div>
+    </div>

@@ -1,0 +1,181 @@
+--- 
+layout: default
+---
+
+    <div class="row">
+
+        <div class="col-lg-8 col-md-4">
+            <ul>
+                <div class="row infiniteScroll">
+                    {% for post in paginator.posts %}
+                    <div class="card blog-post">
+                        <img class="card-img-top" src="/assets/img/{{ post.thumbnail }}" alt="{{ post.title }}">
+                        <div class="card-body center">
+                            <img src="/assets/img/{{ site.author_logo }}" class="author-profile-img">
+                            <h4 class="card-title">{{ post.title }}</h4>
+
+                            <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%Y.%m.%d" }}</h6> <!-- date: "%b %-d, %Y" -->
+                            <p class="card-text">{{ post.summary }} </p>
+
+                            <a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" class="btn btn-primary btn-lg">Read</a>
+                            <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></span>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </ul>
+            {% if paginator.total_pages > 1 %}
+                {% assign start = paginator.page | minus: 2 %}
+                {% assign end = paginator.page | plus: 2 %}
+                {% if start < 1 %}
+                    {% assign start = 1 %}
+                    {% assign end = start | plus: 4 %}
+                {% elsif end > paginator.total_pages %}
+                    {% assign start = paginator.total_pages | minus: 4 %}
+                    {% assign end = paginator.total_pages %}
+                {% endif %}
+                {% if start < 1 %}
+                    {% assign start = 1 %}
+                {% endif %}
+                {% if end > paginator.total_pages %}
+                    {% assign end = paginator.total_pages %}
+                {% endif %}
+                <div class="pagination-wrapper">
+                    <div class="pagination">
+                    {% if paginator.previous_page %}
+                        <a class="pagination-step btn btn-outline-danger btn-lg" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                        Newer
+                        </a>
+                    {% else %}
+                        <span class="pagination-step btn-outline-danger btn-lg">
+                        Newer
+                        </span>
+                    {% endif %}
+
+                    {% if start > 1 %}
+                        <a class="pagination-first btn btn-outline-danger btn-lg" href="{{ site.baseurl }}/">1</a>
+                        <span class="pagination-more btn btn-outline-danger btn-lg">&middot;&middot;&middot;</span>
+                    {% endif %}
+
+                    {% for page in (start..end) %}
+                        {% if page == paginator.page %}
+                        <span class="active btn-danger">{{ page }}</span>
+                        {% elsif page == 1 %}
+                        <a href="{{ site.baseurl }}/">{{ page }}</a>
+                        {% else %}
+                        <a href="{{ site.baseurl }}/page{{ page }}">{{ page }}</a>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if end < paginator.total_pages %}
+                        <span class="pagination-more btn btn-outline-danger btn-lg">&middot;&middot;&middot;</span>
+                        <a class="pagination-last btn btn-outline-danger btn-lg" href="{{ site.baseurl }}/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
+                    {% endif %}
+
+                    {% if paginator.next_page %}
+                        <a class="pagination-step btn btn-outline-danger btn-lg" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                        Older
+                        </a>
+                    {% else %}
+                        <span class="pagination-step btn-outline-danger btn-lg">
+                        Older
+                        </span>
+                    {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header"> About {{ site.author }} </div>
+                <div class="card-body text-dark">
+                    <p> 이 DOCs 는 타임스페이스 프레임웍 개발에 관련된 내역을 정리하는 깃허브 기반의 블로그 이며, 주 기록자는 김일국 입니다.!</p>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="card-header">Categories </div>
+                <div class="card-body text-dark">
+                    {% for tag in site.categories %} {% capture tag_name %}{{ tag | first }}{% endcapture %}
+                    <div id="#{{ tag_name | slugize }}"></div>
+                    <li class="tag-head">
+                        <a href="{{ site.baseurl }}/blog/categories/{{ tag_name }}">{{ tag_name }}</a>
+                    </li>
+                    <a name="{{ tag_name | slugize }}"></a>
+
+                    {% endfor %}
+                </div>
+
+
+            </div>
+            <div class="card">
+                <!-- Begin MailChimp Signup Form -->
+                {%- include newsletter.html -%}
+            </div>
+        </div>
+    </div>
+    <script>
+    /* 무한 스크롤 코딩 Start */
+    jQuery(document).ready(function($) {
+        $(function(){
+        // $ 작동확인
+        // alert();alert('{{ paginator.total_pages }}'); //디버그
+        });
+        function ShowLoading() {
+            d = document.createElement('div');
+            $(d).addClass('card blog-post loading')
+                .css({"background":"rgba(0,0,0,0.8)","color":"white","text-align":"center"})
+                .html("<div card-body center>Data loading ...</div>")
+                .appendTo($(".infiniteScroll"))
+        }
+        function HideLoading() { $(".loading").fadeOut(); $(".loading").remove();  }
+
+        var total_count = '{{ paginator.total_pages }}';
+        var next_page = '{{ paginator.next_page }}';
+        var count = 2;
+        // 스크롤 이벤트
+        $(window).on('scroll',function () {
+            /* let $window = $(this);
+            for(var key in $window) {
+                console.log("Attributes: "+ key + ", value: " + $window[key]);
+            } */
+            infiniteScroll();
+        });
+        // 스크롤 감지 및 ajax함수 호출
+        function infiniteScroll(){
+            let $window = $(this);
+            let scrollTop = $window.scrollTop();
+            let windowHeight = $window.height();
+            let documentHeight = $(document).height();
+            //console.log("documentHeight:" + documentHeight + " | scrollTop:" + scrollTop + " | windowHeight: " + windowHeight );
+            // scrollbar의 thumb가 바닥 전 5px까지 도달 하면 리스트를 가져온다.
+            if( scrollTop + windowHeight + 5 > documentHeight ){
+                if(count>total_count || next_page=="" ){ return false; } //count = total_count;
+                ShowLoading();
+                loadArticle(count);
+                count++;
+            }
+        }
+        // ajax url에서 Data 로드
+        function loadArticle(pageNumber){ //alert(pageNumber);//디버그
+            $.ajax({
+                type: 'GET',
+                url: "/page"+pageNumber,
+                cache: false,
+                success: function(response){
+                    var card = $(response).find('.infiniteScroll .card');
+                    var pagination = $(response).find('.pagination');
+                    setTimeout(function(){ // 시간 지연
+                        $('.infiniteScroll').append(card);
+                        $('.pagination-wrapper').html(pagination);
+                        HideLoading();
+                    }, 1000);
+                }
+            });
+            return false;
+        }
+    });
+    /* 무한 스크롤 코딩 End */
+    </script>

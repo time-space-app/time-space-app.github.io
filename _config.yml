@@ -1,0 +1,32 @@
+locale: "ko-KR"
+title: "타임스페이스 DOCs"
+subtitle: "타임스페이스 작업 문서"
+description: "타임스페이스의 깃허브 website"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://time-space-app.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+author_logo: profile.png
+disqus_shortname: time-space  #for comments using disqus
+author: kimilguk
+author_bio: korean
+author_email: "dev@time-space.kr"
+author_location: korea
+author_website_url: "http://time-space.kr"
+
+# social links
+twitter_username: kimilguk
+github_username:  time-space-app
+facebook_username: kimilguk
+linkedin_username: ilguk-kim-5305ab163
+#behance_username: yourusername
+#instagram_username: yourusername
+#medium_username: yourusername 
+#telegram_username: yourusername
+#dribbble_username: yourusername 
+#flickr_username: yourusername
+
+# pagination
+plugins:
+  - jekyll-paginate
+paginate: 2                  # 페이징 처리 개수
+paginate_path: "/page:num/"   # URL 규칙

@@ -1,0 +1,66 @@
+body { background: url(../img/main-bg.jpg); }
+header { height: 172px; color: white; padding: 0; }
+header .col-lg-12 { padding-left:0; padding-right:0; }
+.social-link { font-size: 20px; color:white; }
+footer { box-shadow: 10px 5px 10px 0px; padding:15px; }
+footer .col-lg-12 p { margin:0 auto; }
+footer .profile-img { width: 50px; height: 50px; margin-left: 0px; }
+/* contents */
+/* .row { margin-right: 0; } */
+    /* IE10+ */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .card-img-top { min-height:200px; }
+    }
+
+    /* IE6,7,9,10 */
+    @media screen and (min-width: 640px), screen\9 {
+        .card-img-top { min-height:200px; }
+    }
+/* pagination Start */
+.pagination-wrapper { text-align: center; width: 100%; }
+.pagination { display: inline-block; margin: 0 0 2rem; background-color: #D6DDE1; }
+.pagination a,.pagination span {
+    border-radius: 3px;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 30px;
+}
+a.pagination-step,span.pagination-step {
+padding: 0 10px;
+width: auto;
+}
+.pagination-first,.pagination-last,.pagination-more { display: none; }
+.pagination .active { background: #ddd; color: #fff; }
+@media (min-width: 38em) {
+    .pagination-first,.pagination-last,.pagination-more { display: block; }
+    a.pagination-step,span.pagination-step { padding: 0 15px; width: auto; }
+}
+/* pagination End */
+/* Post Nav */
+.pagination .shorten { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 200px; }
+
+/*Menu Start*/
+.navbar { padding-top:10px; padding-bottom:0px; }
+.dropdown-menu{padding:0;margin:0;border:0 solid transition;border:0 solid rgba(0,0,0,.15);border-radius:0;
+    -webkit-box-shadow:none;box-shadow:none;}
+.navbar .nav-item.dropdown > .dropdown-menu{margin-top:0px;}
+.navbar .dropdown ul li a {color:#fff;text-transform:capitalize;padding:12px 15px;display: block;}
+.navbar li a:hover,.navbar li a:focus ,.navbar-default .navbar-nav>.show>a, .navbar-default .navbar-nav>.show>a:focus, .navbar-default .navbar-nav>.show>a:hover{
+    color: #fff;background: #4CAF50;outline: 0;}
+.navbar .active > a,.navbar .active > a:focus,.navbar .active > a:hover {background: #4CAF50;}
+    /*==========Sub Menu=v==========*/
+    .navbar .collapse  ul > li:hover > a{background: #4CAF50;}
+    .navbar .collapse ul ul > li:hover > a, .navbar-default .navbar-nav .show .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .show .dropdown-menu > li > a:hover{
+        background: #4CAF50;}
+    .navbar .collapse ul ul ul > li:hover > a{background: #4CAF50;}
+    .navbar .collapse ul ul, .navbar .collapse ul ul.dropdown-menu{background:#1565C0;}
+    .navbar .collapse ul ul ul, .navbar .collapse ul ul ul.dropdown-menu{background:#1E88E5}
+    .navbar .collapse ul ul ul ul, .navbar .collapse ul ul ul ul.dropdown-menu{background:#64B5F6}
+    /******************************Drop-down menu work on hover**********************************/
+    .navbar-nav .show .dropdown-menu .dropdown-menu > li > a{padding:16px 15px 16px 35px}
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu > li > a{padding:16px 15px 16px 45px}
+    /*menu-반응형 PC용*/
+    @media only screen and (min-width: 767px) {
+        .navbar-expand-md .navbar-nav .nav-link { padding-left: 0.75rem; padding-right: 0.7rem; }
+    }
