@@ -80,7 +80,7 @@ width: auto;
             text-align: center;
             text-decoration: none;
             cursor:pointer;
-            background-image: url(top.png);
+            /* background-image: url(top.png);*/
             background-position-x:center;
             background-position-y:40px;
             background-repeat:no-repeat;
