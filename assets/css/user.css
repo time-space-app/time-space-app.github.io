@@ -86,3 +86,6 @@ width: auto;
             background-repeat:no-repeat;
          }
     }
+/* 메일폼 */
+.honeypot-field, .color { display: none; }
+#message { width:100%; }

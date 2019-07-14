@@ -1,3 +1,55 @@
+<!-- START HERE -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!--필요시 form태그안에 추가 data-email="example@email.net"-->
+<form class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/a/knou.ac.kr/macros/s/AKfycbz8VBVV-YuzhTEYOzmy7z1sLuyQb7fqSAb8uRCW2w/exec">
+ <!-- change the form action to your script url -->
+
+ <div class="form-elements">
+   <fieldset class="pure-group">
+     <label for="name">Name: </label>
+     <input id="name" name="name" placeholder="What your Mom calls you" />
+   </fieldset>
+
+   <fieldset class="pure-group">
+     <label for="message">Message: </label>
+     <textarea id="message" name="message" rows="10"
+     placeholder="Tell us what's on your mind..."></textarea>
+   </fieldset>
+
+   <fieldset class="pure-group">
+     <label for="email"><em>Your</em> Email Address:</label>
+     <input id="email" name="email" type="email" value=""
+     required placeholder="your.name@email.com"/>
+   </fieldset>
+
+   <fieldset class="pure-group color">
+     <label for="color">Favourite Color: </label>
+     <input id="color" name="color" placeholder="green" />
+   </fieldset>
+
+   <fieldset class="pure-group honeypot-field">
+     <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+     <input id="honeypot" type="text" name="honeypot" value="" />
+   </fieldset>
+
+   <button class="button-success pure-button button-xlarge">
+     <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+ </div>
+
+ <!-- Customise the Thankyou Message People See when they submit the form: -->
+ <div class="thankyou_message" style="display:none;">
+   <h2><em>Thanks</em> for contacting us!<br>
+     곧 다시 연락 드리겠습니다!</h2>
+ </div>
+
+</form>
+
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" src="/assets/js/form-submission-handler.js"></script>
+<!-- END -->
+
+<!--댓글 기능 사용중지 
 <div id="mc_embed_signup">
     <div id="disqus_thread"></div>
 </div>
@@ -19,3 +71,4 @@
 <noscript>Please enable JavaScript to view the
     <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
+-->
