@@ -26,7 +26,7 @@ author: TimeSpace
  <li>로그인 처리-코어수정.</li>
  <li>코드미러 v5.2.1 MIT라이센스</li>
  <li>프레임웍 변수 v1.4 -> v1.5 버전정보 값 변경(/time-space/version.php).</li>
- <li>3단까지 서브메뉴 추가 작동 처리-코어수정./li>
+ <li>3단까지 서브메뉴 추가 작동 처리-코어수정.</li>
  <li>기본metro플러그인 폴더를 _metro로 변경.</li>
  <li>신규 fullpage플러그인을 _fullpage폴더로 추가.</li>
 </ul>
