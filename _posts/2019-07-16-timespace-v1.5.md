@@ -1,13 +1,13 @@
 ---
-title: "TimeSpace-v1.5 미리보기"
+title: "v1.5 미리보기"
 layout: post
-summary: 타임스페이스 v1.5 미리보기 사이트오픈
+summary: v1.5 미리보기 사이트 오픈
 categories: timespace
 thumbnail: projects/v1.5.jpg
 author: TimeSpace
 ---
 
-# 타임스페이스 v1.5 미리보기 사이트오픈
+# 타임스페이스 v1.5 미리보기 사이트 오픈
 
 작업결과확인: <a href="http://time-space.biz/_fullpage/" target="_new">http://time-space.biz/_fullpage/</a>
 
