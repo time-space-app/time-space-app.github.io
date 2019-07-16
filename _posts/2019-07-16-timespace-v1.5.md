@@ -7,7 +7,7 @@ thumbnail: projects/v1.5.jpg
 author: TimeSpace
 ---
 
-# 2019.07.16 타임스페이스 v1.5 미리보기 사이트 오픈
+# 타임스페이스 v1.5 미리보기 사이트 오픈
 
 작업결과확인: <a href="http://time-space.biz/_fullpage/" target="_new">http://time-space.biz/_fullpage/</a>
 
