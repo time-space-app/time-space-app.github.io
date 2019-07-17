@@ -1,6 +1,6 @@
 body { background: url(../img/main-bg.jpg); }
 header { height: 172px; color: white; padding: 0; }
-header .fa-searchengin { font-size: 30px; }
+header .fa-searchengi, header .fa-github { font-size: 30px; }
 header .col-lg-12 { padding-left:0; padding-right:0; }
 .social-link { font-size: 20px; color:white; }
 footer { box-shadow: 10px 5px 10px 0px; padding:15px; }
