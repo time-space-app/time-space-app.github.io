@@ -5,11 +5,12 @@ title: Docs
 
 # 타임스페이스 작업 내역 문서
  - 다음 버전v1.6 에서 할일
+    - 코드미러 v5.2.1 MIT라이센스
+    - 기존 파일관리자에 사용되는 코드미러에디터 기능개선예정.
+    - 게시판 종류 2가지(qa, community) fullpage플러그인에 추가예정.
     - 메뉴와 연동되는 Ckeditor 콘텐츠 미리보기기능을 realtime.html처럼 변경고려중.
     - 또는, 기존 작동방식은 놔두고, 실제 사용자 페이지를 realtime.html처럼 변경고려중.
     - 플러그인 종류 변수처리.
-    - 코드미러 v5.2.1 MIT라이센스
-    - 기존 파일관리자에 사용되는 코드미러에디터 기능개선예정.
 
 <h2 class="text-center"> 타임스페이스 v1.5 사용법 </h2>
  - 결과확인URL: <a href="http://time-space.biz/_fullpage/" target="_new">타임스페이스v1.5 미리보기</a>
