@@ -4,16 +4,56 @@ title: Docs
 ---
 
 # 타임스페이스 작업 내역 문서
- - 앞으로 할일
-    - fullPage UI 플러그인 커스터 마이징
-    - 프레임웍 게시판 노출처리.
+ - 다음 버전v1.6 에서 할일
     - 메뉴와 연동되는 Ckeditor 콘텐츠 미리보기기능을 realtime.html처럼 변경고려중.
     - 또는, 기존 작동방식은 놔두고, 실제 사용자 페이지를 realtime.html처럼 변경고려중.
-    - 초기 DB에 기본 Home 메뉴 생성 쿼리 추가 (설치시 관리자 admin / admin1234 추가하는 방식과 같음).
     - 플러그인 종류 변수처리.
     - 코드미러 v5.2.1 MIT라이센스
     - 기존 파일관리자에 사용되는 코드미러에디터 기능개선예정.
 
+<h1 class="text-center"> 타임스페이스 사용법 </h1>
+ - 결과확인URL: <a href="http://time-space.biz/_fullpage/" target="_new">타임스페이스v1.5 미리보기</a>
+<hr />
+<p> 설치 및 실행 요약을 보여드리겠습니다. </p>
+<ol>
+<li> 인스톨 <img src="assets/img/projects/01_install.jpg" width="100%" height="auto"></li>
+<li> 인스톨OK <img src="assets/img/projects/02_installed.jpg" width="100%" height="auto"></li>
+<li> 로그인 <img src="assets/img/projects/03_login.jpg" width="100%" height="auto"></li>
+<li> 로그인OK <img src="assets/img/projects/04_logined.jpg" width="100%" height="auto"></li>
+<li> 파일매니저에서 플로그인 폴더구조확인 <img src="assets/img/projects/05_file_manager_folder.jpg" width="100%" height="auto"></li>
+<li> 보드매니저에서 CMS확인 <img src="assets/img/projects/06_board_manager_cms.jpg" width="100%" height="auto"></li>
+<li> CMS 메뉴추가 <img src="assets/img/projects/06_cms_memu_add.jpg" width="100%" height="auto"></li>
+<li> CMS 콘텐츠추가 <img src="assets/img/projects/07_cms_editor.jpg" width="100%" height="auto"></li>
+<li> 게시판 내용추가 <img src="assets/img/projects/08_board_editor.jpg" width="100%" height="auto"></li>
+<li> 회원관리 <img src="assets/img/projects/09_member_editor.jpg" width="100%" height="auto"></li>
+<li> 메뉴 및 콘텐츠추가 결과 <img src="assets/img/projects/10_result.jpg" width="100%" height="auto"></li>
+</ol>
+<p> 작업내역 요약 </p> 
+<blockquote> 
+<p>v1.5에 적용된 fullPage플러그인은 작업시 10개의 공정으로 구성됩니다. </p>
+</blockquote>
+<ol>
+<li> _fullpage.html 디자인 퍼블리싱 <a href="http://time-space.biz/_fullpage/_fullpage.html" target="_new">미리보기</a> </li>
+<li> _fullpage.php 코딩입히기 <a href="http://time-space.biz/_fullpage/_fullpage.php" target="_new">미리보기</a> </li>
+<li> top_menu.php 동적메뉴 php코딩 </li>
+<li> header.php 전체공통 상단 php코딩 </li>
+<li> footer.php 전체공통 하단 php코딩-현재 내용없음. </li>
+<li> index.php 콘텐츠 불러오기 php코딩 - 모든 메뉴와 연동된 콘텐츠내용이 이곳에서 출력 됩니다.</li>
+<li> list.php 사용자단 게시판 목록 전용 php코딩 </li>
+<li> view.php 사용자단 게시판 뷰 전용 php코딩 </li>
+<li> board_header.php 게시판공통 상단 php코딩 </li>
+<li> board_footer.php 게시판공통 하단 html태그 </li>
+</ol>
+
+<p>위 작업 플로우를  <mark>vs code</mark> 작업에디터에서 본 화면은 아래와 같습니다.</p>
+<p><img src="assets/img/projects/01_workflow.jpg" width="100%" height="auto"></p>
+<p><img src="assets/img/projects/02_workflow.jpg" width="100%" height="auto"></p>
+</div> 
+<hr />
+ - 2019.07.17 타임스페이스 v1.5 마무리.
+    - 초기 DB에 기본 Home 메뉴 생성 쿼리 추가 (설치시 관리자 admin / admin1234 추가하는 방식과 같음).
+    - 프레임웍 게시판 노출처리.
+    - fullPage UI 플러그인 커스터 마이징
  - 2019.07.14 기술문서 Git샤이트 메일폼 추가.
     - 구글 앱 스크립트사용
  - 2019.07.13 기술문서 Git샤이트 도메인연결.
