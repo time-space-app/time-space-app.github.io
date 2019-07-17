@@ -11,7 +11,7 @@ title: Docs
     - 코드미러 v5.2.1 MIT라이센스
     - 기존 파일관리자에 사용되는 코드미러에디터 기능개선예정.
 
-<h1 class="text-center"> 타임스페이스 사용법 </h1>
+<h2 class="text-center"> 타임스페이스 v1.5 사용법 </h2>
  - 결과확인URL: <a href="http://time-space.biz/_fullpage/" target="_new">타임스페이스v1.5 미리보기</a>
 <hr />
 <p> 설치 및 실행 요약을 보여드리겠습니다. </p>
@@ -19,8 +19,8 @@ title: Docs
 <li> 인스톨 <img src="assets/img/projects/01_install.jpg" width="100%" height="auto"></li>
 <li> 인스톨OK <img src="assets/img/projects/02_installed.jpg" width="100%" height="auto"></li>
 <li> 로그인 <img src="assets/img/projects/03_login.jpg" width="100%" height="auto"></li>
-<li> 로그인OK <img src="assets/img/projects/04_logined.jpg" width="100%" height="auto"></li>
-<li> 파일매니저에서 플로그인 폴더구조확인 <img src="assets/img/projects/05_file_manager_folder.jpg" width="100%" height="auto"></li>
+<li> 로그인OK-초기화면 <img src="assets/img/projects/04_logined.jpg" width="100%" height="auto"></li>
+<li> 파일매니저에서 플러그인 폴더구조확인 <img src="assets/img/projects/05_file_manager_folder.jpg" width="100%" height="auto"></li>
 <li> 보드매니저에서 CMS확인 <img src="assets/img/projects/06_board_manager_cms.jpg" width="100%" height="auto"></li>
 <li> CMS 메뉴추가 <img src="assets/img/projects/06_cms_memu_add.jpg" width="100%" height="auto"></li>
 <li> CMS 콘텐츠추가 <img src="assets/img/projects/07_cms_editor.jpg" width="100%" height="auto"></li>
@@ -48,8 +48,8 @@ title: Docs
 <p>위 작업 플로우를  <mark>vs code</mark> 작업에디터에서 본 화면은 아래와 같습니다.</p>
 <p><img src="assets/img/projects/01_workflow.jpg" width="100%" height="auto"></p>
 <p><img src="assets/img/projects/02_workflow.jpg" width="100%" height="auto"></p>
-</div> 
 <hr />
+
  - 2019.07.17 타임스페이스 v1.5 마무리.
     - 초기 DB에 기본 Home 메뉴 생성 쿼리 추가 (설치시 관리자 admin / admin1234 추가하는 방식과 같음).
     - 프레임웍 게시판 노출처리.
