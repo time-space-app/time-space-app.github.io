@@ -124,7 +124,7 @@ favicon 생성후 타임스페이스에 적용
 파비콘 생성 사이트 http://convertico.org/
 
 파일 저장시 encode in utf-8 without BOM 으로 하면 크롬에서 한글이 깨져 보임 그냥 encode in utf-8 로 저장
-<img src="projects/timespacev1.1_encode.jpg" width="100%" height="auto">
+<img src="/assets/img/projects/timespacev1.1_encode.jpg" width="100%" height="auto">
 2013.6.27(목)
 
 구글번역기 추가참조: https://translate.google.com/manager/website/?hl=ko
