@@ -9,7 +9,7 @@ author: TimeSpace
 
 # 타임스페이스 개발 히스토리
 
-작업결과확인: (구)타임스페이스 v1.1<a href="/plugins/fullpage.html" target="_blank">[/plugins/fullpage.html]</a>
+작업결과확인: <a href="http://webassets.dothome.co.kr/metro/" target="_blank">(구)타임스페이스 v1.1</a>
 
 <h2>타임스페이스 개발 History:</h2>
 <pre>
