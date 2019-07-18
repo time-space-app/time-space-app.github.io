@@ -11,7 +11,6 @@ author: TimeSpace
 
 작업결과확인: <a href="http://webassets.dothome.co.kr/metro/" target="_blank">(구)타임스페이스 v1.1</a>
 
-<h2>타임스페이스 개발 History:</h2>
 <pre>
 *다음작업예정
 디자인템플릿 추가
