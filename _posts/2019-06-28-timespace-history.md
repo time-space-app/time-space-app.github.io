@@ -1,15 +1,15 @@
 ---
-title: "타임스페이스 History"
+title: "(구)타임스페이스 History"
 layout: post
-summary: 타임스페이스 개발 History
+summary: (구)타임스페이스 개발 History
 categories: timespace
 thumbnail: projects/timespace1.1_metro.jpg
 author: TimeSpace
 ---
 
-# 타임스페이스 개발 히스토리
+# 이전 (구)타임스페이스 개발 히스토리
 
-작업결과확인: <a href="http://webassets.dothome.co.kr/metro/" target="_blank">(구)타임스페이스 v1.1</a>
+(구)작업결과확인: <a href="http://webassets.dothome.co.kr/metro/" target="_blank">(구)타임스페이스 v1.1</a>
 
 <pre>
 *다음작업예정
