@@ -5,13 +5,37 @@ title: Docs
 
 # 타임스페이스 작업 내역 문서
  - 다음 버전v1.6 에서 할일
-    - 코드미러 v5.2.1 MIT라이센스
-    - 기존 파일관리자에 사용되는 코드미러에디터 기능개선예정.
     - 게시판 종류 2가지(qa, community) fullpage플러그인에 추가예정.
     - 메뉴와 연동되는 Ckeditor 콘텐츠 미리보기기능을 realtime.html처럼 변경고려중.
     - 또는, 기존 작동방식은 놔두고, 실제 사용자 페이지를 realtime.html처럼 변경고려중.
     - 플러그인 종류 변수처리.
 
+ - 2019.07.19 타임스페이스 v1.5 추가작업.
+    - 기존 파일관리자에 사용되는 코드미러에디터 기능개선OK.
+ - 2019.07.17 타임스페이스 v1.5 마무리.
+    - 초기 DB에 기본 Home 메뉴 생성 쿼리 추가 (설치시 관리자 admin / admin1234 추가하는 방식과 같음).
+    - 프레임웍 게시판 노출처리.
+    - fullPage UI 플러그인 커스터 마이징
+ - 2019.07.14 기술문서 Git샤이트 메일폼 추가.
+    - 구글 앱 스크립트사용
+ - 2019.07.13 기술문서 Git샤이트 도메인연결.
+    - http://time-space-app.github.io => http://app.time-space.biz
+    - Git사이트에 jekyll기반 rb루비 검색기능 추가
+ - 2019.07.10 로그인 처리-코어수정.
+ - 2019.07.09 기술문서 Git사이트 생성.
+    - 로컬PC에 루비rubyinstaller-devkit-2.5.5-1-x64 설치(https://rubyinstaller.org/) 후 블로그 생성
+ - 2019.07.08 로그인 처리-코어수정.
+    - 프레임웍 변수 v1.4 -> v1.5 버전정보 값 변경(/time-space/version.php).
+ - 2019.07.07 3단까지 서브메뉴 추가 작동 처리-코어수정.
+ - 2019.07.06 기본metro플러그인 폴더를 _metro로 변경.
+    - 신규 fullpage플러그인을 _fullpage폴더로 추가.
+ - 2019.07.05 저장소 개발환경 생성.
+    - Github DeskTOP 설치 후 VS code 개발툴 환경구성.
+ - 2019.07.04 로컬 개발환경 생성.
+    - 타임스페이스 프레임웍 개발환경 설치: wampserver3.1.9_x64.
+    - wmap패널 localhost 항목에서 vhost를 사용해서, 여러 프로젝트 작업 가능처리.
+    - 타임스페이스 v1.4 개발코드 실행.
+<hr />
 <h2 class="text-center"> 타임스페이스 v1.5 사용법 </h2>
  - 결과확인URL: <a href="http://time-space.biz/_fullpage/" target="_new">타임스페이스v1.5 미리보기</a>
 <hr />
@@ -51,29 +75,7 @@ title: Docs
 <p><img src="assets/img/projects/02_workflow.jpg" width="100%" height="auto"></p>
 <hr />
 
- - 2019.07.17 타임스페이스 v1.5 마무리.
-    - 초기 DB에 기본 Home 메뉴 생성 쿼리 추가 (설치시 관리자 admin / admin1234 추가하는 방식과 같음).
-    - 프레임웍 게시판 노출처리.
-    - fullPage UI 플러그인 커스터 마이징
- - 2019.07.14 기술문서 Git샤이트 메일폼 추가.
-    - 구글 앱 스크립트사용
- - 2019.07.13 기술문서 Git샤이트 도메인연결.
-    - http://time-space-app.github.io => http://app.time-space.biz
-    - Git사이트에 jekyll기반 rb루비 검색기능 추가
- - 2019.07.10 로그인 처리-코어수정.
- - 2019.07.09 기술문서 Git사이트 생성.
-    - 로컬PC에 루비rubyinstaller-devkit-2.5.5-1-x64 설치(https://rubyinstaller.org/) 후 블로그 생성
- - 2019.07.08 로그인 처리-코어수정.
-    - 프레임웍 변수 v1.4 -> v1.5 버전정보 값 변경(/time-space/version.php).
- - 2019.07.07 3단까지 서브메뉴 추가 작동 처리-코어수정.
- - 2019.07.06 기본metro플러그인 폴더를 _metro로 변경.
-    - 신규 fullpage플러그인을 _fullpage폴더로 추가.
- - 2019.07.05 저장소 개발환경 생성.
-    - Github DeskTOP 설치 후 VS code 개발툴 환경구성.
- - 2019.07.04 로컬 개발환경 생성.
-    - 타임스페이스 프레임웍 개발환경 설치: wampserver3.1.9_x64.
-    - wmap패널 localhost 항목에서 vhost를 사용해서, 여러 프로젝트 작업 가능처리.
-    - 타임스페이스 v1.4 개발코드 실행.
+# 타임스페이스 PC개발환경 및 Git 기술문서 작성기초
 <pre>
 *wampserver3.1.9_x64 설치시:
 주의) vs12_vcredist_x64 -> vs13_vcredist_x64 -> vs15_vcredist_x64 모두 설치해야 한다.
