@@ -47,6 +47,7 @@ title: Docs
 <li> 로그인 <img src="assets/img/projects/03_login.jpg" width="100%" height="auto"></li>
 <li> 로그인OK-초기화면 <img src="assets/img/projects/04_logined.jpg" width="100%" height="auto"></li>
 <li> 파일매니저에서 플러그인 폴더구조확인 <img src="assets/img/projects/05_file_manager_folder.jpg" width="100%" height="auto"></li>
+<li> 보드매니저에서 플러그인 관리화면 <img src="assets/img/projects/11_plugin_var.jpg" width="100%" height="auto"></li>
 <li> 보드매니저에서 CMS확인 <img src="assets/img/projects/06_board_manager_cms.jpg" width="100%" height="auto"></li>
 <li> CMS 메뉴추가 <img src="assets/img/projects/06_cms_memu_add.jpg" width="100%" height="auto"></li>
 <li> CMS 콘텐츠추가 <img src="assets/img/projects/07_cms_editor.jpg" width="100%" height="auto"></li>
