@@ -3,7 +3,7 @@ title: "pv1.5 미리보기"
 layout: post
 summary: pv1.5 미리보기 사이트 오픈
 categories: timespace
-thumbnail: projects/v1.5.jpg
+thumbnail: projects/pv1.5.jpg
 author: TimeSpace
 ---
 
